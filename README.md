@@ -1,3 +1,3 @@
-# Hippo Data v0.4.0
+# Hippo Data v0.4.1
 
 #### Documentation

@@ -2,7 +2,7 @@
  * Provides bump.js as Grunt task
  *
  * Author(s):  Jonathan "Yoni" Knoll
- * Version:    0.4.0
+ * Version:    0.4.1
  * Date:       2016-11-04
  *
  */
@@ -11,11 +11,10 @@ module.exports = function( grunt ) {
   'use strict';
 
   var colors = require('colors');
-  var pkg = grunt.file.readJSON('./package.json');
 
   grunt.registerTask('bump', function(version) {
 
-    var currentVersion = pkg.version;
+    var currentVersion = grunt.config('pkg').version;
 
     switch(version) {
       case 'check':

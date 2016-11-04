@@ -2,7 +2,7 @@
  * hippo data
  *
  * Author(s):  Jonathan "Yoni" Knoll
- * Version:    0.4.0
+ * Version:    0.4.1
  * Date:       2016-11-04
  *
  */
