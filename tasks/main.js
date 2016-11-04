@@ -2,7 +2,7 @@
  * hippo data
  *
  * Author(s):  Jonathan "Yoni" Knoll
- * Version:    0.2.0
+ * Version:    0.3.0
  * Date:       2016-11-04
  *
  */
@@ -22,19 +22,20 @@ module.exports = function(grunt) {
 
   addConfig('pkg', pkg);
 
+  var root = path.normalize(path.relative(process.cwd(), __dirname) + '/' + path.relative(__filename, __dirname));
+
   grunt.registerTask('load-data', function() {
     var data = {
+      last_modified: new Date(),
       source: pkg.name,
       version: pkg.version,
-      files: grunt.file.expand(['data/*.json'])
+      files: grunt.file.expand([root + '/data/*.json'])
     };
-
     grunt.file.write('hippo-data.json', JSON.stringify(data, null, 2));
-
   });
 
   addConfig('hippo', {
-    src: [ path.relative(__filename, __dirname) ]
+    src: [ root ]
   });
 
   console.log('\n');
