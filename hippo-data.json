@@ -1,0 +1,9 @@
+{
+  "source": "hippo-data",
+  "version": "0.1.0",
+  "files": [
+    "data/contacts.json",
+    "data/countries.json",
+    "data/us_states.json"
+  ]
+}

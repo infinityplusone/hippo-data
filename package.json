@@ -1,0 +1,17 @@
+{
+  "name": "hippo-data",
+  "version": "0.2.0",
+  "title": "Hippo(campus) Data",
+  "description": "Data for Hippo(campus)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/infinityplusone/hippo-data.git"
+  },
+  "author": "Jonathan \"Yoni\" Knoll",
+  "license": "MIT",
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "lodash": "^4.16.2"
+  }
+}
